@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Cheisyaa sayangkuu 💕</title>
+<meta name="description" content="Sebuah website kecil buat bikin Cheisya senyum lagi.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="hero">
+  <div class="hero__doodles" aria-hidden="true">
+    <span class="doodle doodle--star d1">✦</span>
+    <span class="doodle doodle--heart d2">♡</span>
+    <span class="doodle doodle--star d3">✧</span>
+    <span class="doodle doodle--heart d4">♡</span>
+    <span class="doodle doodle--star d5">✦</span>
+    <span class="doodle doodle--squiggle d6">〜</span>
+  </div>
+
+  <p class="hero__eyebrow">untuk seseorang yang lagi sedihhh dan badmoodd</p>
+  <h1 class="hero__title">Haiii, Sayangggku cheisyaaa <span class="wave">👋</span></h1>
+  <p class="hero__subtitle">aku tau hari ini kamu lagi badmood atau lagi pusing atau lagii marahh<br>karna aku gabisa bobo kepikiran teruss, jadi aku siapin sesuatu buat kamu biar kamuu cemnagatt, tapi ini web simpel bgtt karna aku buatnyaa cuma 3 harii hehee</p>
+
+  <div class="polaroid polaroid--hero" id="heroPolaroid">
+    <div class="polaroid__frame">
+      <img src="hero.jpeg" alt="Foto kitaaa berdua" id="heroPhoto">
+      <span class="polaroid__doubletap-heart" id="doubleTapHeart" aria-hidden="true">❤️</span>
+    </div>
+    <p class="polaroid__caption">kita, di hari yang baik dan seruu 🥰 <span class="polaroid__taphint"></span></p>
+  </div>
+
+  <div class="popgame" id="popGame">
+    <p class="popgame__hint">pecahin dulu badmood nyaa , pencet satu satu 👇</p>
+    <div class="popgame__field" id="popField"><!-- bubble diisi oleh script.js --></div>
+    <p class="popgame__progress" id="popProgress">0 / 6 kepop 🎈</p>
+    <button class="popgame__skip" id="skipGame" type="button">males main, lewatin aja 🙈</button>
+  </div>
+
+  <p class="hero__msg" id="moodMessage" aria-live="polite"></p>
+  <p class="hero__scrollcue">↓ scroll terus yuk ↓</p>
+</header>
+
+<!-- ===== COUNTER ===== -->
+<section class="counter" id="counterSection">
+  <p class="counter__label">sudah</p>
+  <p class="counter__number"><span id="dayCount">0</span> hari</p>
+  <p class="counter__label">kita lewatinnn ay💕</p>
+</section>
+<audio id="bgMusic" controls loop>
+  <source src="musik-anda.mp3" type="audio/mpeg">
+</audio>
+<!-- ===== TIMELINE ===== -->
+<section class="timeline" id="timelineSection">
+  <h2 class="section__title">Cerita Kita <span class="section__accent">✨</span></h2>
+  <div class="timeline__wrap">
+    <div class="timeline__line" aria-hidden="true"></div>
+    <div class="timeline__list" id="timelineList"><!-- diisi oleh script.js --></div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallerySection">
+  <h2 class="section__title">Galeri Randomm Kita berduaa<span class="section__accent">📸</span></h2>
+  <p class="gallery__hint">geser buat liat semuanya, tap buat liat gedean →</p>
+  <div class="gallery__track" id="galleryTrack"><!-- diisi oleh script.js --></div>
+  <div class="gallery__dots" id="galleryDots"><!-- diisi oleh script.js --></div>
+</section>
+
+<!-- ===== TOPLES SEMANGAT ===== -->
+<section class="jar" id="jarSection">
+  <h2 class="section__title">Toples Semangat <span class="section__accent">🫙</span></h2>
+  <p class="jar__hint">lagi butuh semangat tambahan? kocok dulu toplesnya~</p>
+  <button class="jar__button" id="jarButton" type="button" aria-label="Kocok toples semangat">🫙</button>
+  <p class="jar__note" id="jarNote" aria-live="polite">tap toplesnya buat ambil satu pesan</p>
+</section>
+
+<!-- ===== LETTER ===== -->
+<section class="letter" id="letterSection">
+  <div class="letter__card">
+    <p class="letter__to">Untuk Cheisya,</p>
+    <p class="letter__body">
+      Aku tau kamu lagi capek, bete, atau emang lagi gamau ngomongg sama akuu 😔, tapi aku sedihh bangett kalo kamu sampe di titk males ngobrol ma akuu taukk 🥺, maafin aku yaa sayangg, aku emang akhbir akhir ini banyak buat kamu seidhh, maafin 3 hari lalu ynag aku maksa kamu pualngg sampe lacak kamu 🥺, maafin aku tadii yang ga ngajakk kamu mkann malah langsung balikk 🥺, aku bener benr ngerasa beesalahh
+      <br><br>
+      Makasih udah jadi Cheisya yang aku sayangg dan baikk hatiii, aku sayangggg bgttt sama kamuu, walau kamu lagi badmood, walau kamu lagi nyuekinn aku, walauu kamu lagi diem ajaa, aku tetepp sayanggg bgtt sama kamuuu.
+    </p>
+    <p class="letter__signature">dengan sayangg,<br>Djibril(ninu) 🐻🐠</p>
+  </div>
+  <button class="btn btn--hug" id="hugButton" type="button">kirim chattt ke aku 🥰</button>
+</section>
+
+<footer class="footer">
+  <p>dibuat dengan 💕 oleh Djibrill, eh ninu deng, ehh sayangg dengg, intinyaaa  buat Cheisyaaa</p>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="modal" id="lightbox" hidden>
+  <div class="modal__backdrop" id="lightboxBackdrop"></div>
+  <div class="modal__content">
+    <button class="modal__close" id="lightboxClose" type="button" aria-label="Tutup foto">✕</button>
+    <img class="modal__image" id="lightboxImage" src="" alt="">
+    <p class="modal__caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
